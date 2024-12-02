@@ -1,0 +1,18 @@
+.box {
+  color: white; 
+  font-size: 20px;
+  background: #FF7B9C; 
+  height: 80px; 
+  width: 110px;
+  border-radius: 12px;
+  display: inline;
+  text-align: center;
+}
+
+.box-2 {
+  background: #EE7B30;
+}
+
+.box-3 {
+  background: #8AA8A1;
+}

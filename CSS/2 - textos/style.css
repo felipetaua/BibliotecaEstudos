@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap'); /* formas de importar no html ou css */
+
+h1 {
+  color: red;
+  font-size: 64px; 
+  font-weight: lighter; 
+  font-family: "Montserrat", Sans-Serif;
+  font-style: italic;
+  text-shadow: 5px 10px 10px grey;
+}
+
+p {
+  color: black; 
+  font-weight: 100; 
+  font-family: "Montserrat", Sans-Serif;
+  font-style: italic;
+  line-height: 20px; /* espaçamento entre linhas */
+  letter-spacing: 5px;/* espaçamento entre letras */
+  word-spacing: ; /* espaçamento entre palavras */
+  text-align: justify;
+  text-transform: uppercase; 
+}
+
+.line {
+  text-decoration: underline red;
+}

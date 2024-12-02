@@ -1,0 +1,23 @@
+* {
+  background: black;
+  font-family: Segoe UI, Sans-Serif;
+}
+
+#titulo {
+  color: red;
+  font-size: 55px;
+}
+
+#paragrafo {
+  font-size: 20px;
+}
+
+.btn {
+  border: 1.5px solid grey;
+  border-radius: 8px;
+  margin: 5px;
+}
+
+.paragrafo, .btn {
+  color: white;
+}

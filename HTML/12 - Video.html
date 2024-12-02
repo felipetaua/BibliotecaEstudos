@@ -1,0 +1,23 @@
+
+
+<!-- Videos em HTML -->
+
+<!-- 
+• controls são os controles padrões
+• controlsList="nodownload" remove a opção de fazer download do video
+• autoplay começa automaticamente o video mas, dependendo do navegador é bloqueado e vai precisar estar com o muted para começar
+• muted tira o som do video
+• poster="" semelhante as thambs do youtube é a foto antes de clicar no video 
+-->
+<h2>Exemplo 1</h2>
+<video src="./video/video.mp4" controls controlsList="nodownload" autoplay muted poster="./img/img.png" width="300px"></video>
+
+<!-- Existem outros formatos de video então tem outra forma -->
+<!-- Voce pode colocar o mesmo video só que em formatos diferentes para garantir que pelo menos 1 deles vai funcionar -->
+<h2>Exemplo 2</h2>
+<video controls muted controlsList="nodownload" width="300px">
+  <source src="./video/video.mvk">
+  <source src="./video/video.mov">
+  <source src="./video/video.mp4">
+</video>
+

@@ -1,0 +1,15 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.box {
+  width: 100px; 
+  height: 100px; 
+  background: #885A89; 
+  padding: 20px;
+  border: 10px solid #FF7B9C;
+}
+
+/* Box sizing*/

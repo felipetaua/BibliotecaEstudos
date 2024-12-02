@@ -1,0 +1,67 @@
+
+
+<!-- Input -->
+
+<!-- 
+• autocomplete="" ele deixa o autocomplete responder e voce tem que falar qual tipo de informacao 
+• value="" coloca um valor/conteudo no input
+• readonly="" o input fica desabilitado, apenas para observar
+placeholder="" é o texto quando o input está vazio quando voce escreve ele desaparece
+label texto relacionado com o input
+Ex:1
+-->
+<h2>Exemplo 1</h2>
+<label>
+  Rua:
+  <input autocomplete="street-address"  value="Taua" placeholder="digite sua rua">
+</label>
+
+
+<!-- 
+Ex:2 
+ Voce vai criar um id no input e um for e vai colocar o id na label
+-->
+<h2>Exemplo 2</h2>
+<label for="rua">Bairro:</label>
+<input autocomplete="street-address" placeholder="digite seu baiiro" id="rua">
+
+
+<!-- autofocus só de passar o mouse por cima ele ja entra no campo, ele só funciona em um input por página normalmente os mais importante -->
+<h2>Exemplo 3 - autofocus</h2>
+<label for="email" type="email">Email:</label>
+<input autocomplete="email" autofocus placeholder="digite seu email" id="email">
+
+<!-- Outros tipos de input -->
+
+<!-- 
+Existem varios types de inputs
+-->
+<h2>Continuando outros input</h2>
+<p>Range</p>
+<input type="range" min="100" max="500" value="200">
+<h2>input</h2>
+<p>Password</p>
+<input type="password">
+<p>Email</p>
+<input type="email">
+<p>Checkbox</p>
+<input type="checkbox">
+<p>File</p>
+<input type="file" multiple accept="video/*">
+<!-- accept seleciona o tipo de arquivo que ele aceita nesse caso todos os tipos de video, se quiser imagens images/*  ou especificamente só colocar a extensão do arquivo .mp4 -->
+<p>date</p> 
+<input type="date">
+<p>number</p>
+<input type="number"> 
+<p>radio</p> 
+<input type="radio">
+<h2>Exemplo de Radio</h2>
+<h3>Qual sua rede social favorita?</h3>
+<!-- Voce só consegue marcar uma das alternativas -->
+<!-- Para todos radios estarem interligados é necessario o mesmo name -->
+<label for="facebook">Facebook</label>
+<input type="radio" id="facebook" name="redes-socais">
+<label for="insragram">Instagram</label>
+<input type="radio" id="insragram" name="redes-socais">
+<label for="youtube">Youtube</label>
+<input type="radio" id="youtube" name="redes-socais">
