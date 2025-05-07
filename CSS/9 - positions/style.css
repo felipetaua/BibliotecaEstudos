@@ -1,3 +1,24 @@
+/*
+CSS Propriedades
+
+Positions:
+    Static(padrão): Não aceitas valores de top, bottom, right, left 
+    Fixed: Fixa o elemento na tala - flutua
+    Stick: Age como um adesivo, fixa/gruda o elemento só onde eu determinar
+    -> como? passar valor top, bottom ou left, right
+    Relative: Posição relativa a posição inicial dele
+    Absolute: Posição Absoluta a algum elemento ou a página - flutua
+        Regras
+        - Se não tiver pai/ pai for static -> posiciona referente a pagina
+        - Se o Pai não for static -> posiciona referente ao elemento pai
+
+    Propriedades:
+    - Top
+    - Bottom
+    - Left 
+    - Right
+*/
+
 .pai {
     width: 250px;
     height: 250px;
