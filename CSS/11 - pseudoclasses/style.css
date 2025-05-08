@@ -18,3 +18,94 @@
 :nth-child() - seleciona o elemento baseado na sua posicão. Ex: :nth-child(3)
 :nth-last-child() - seleciona o elemento baseado na sua posicão, contando de tras para frente.
 
+*/
+
+div, li, input, button, textarea, a, span {
+    margin: 10px;
+    padding: 10px;
+    display: block;
+    border: 1px solid #ccc;
+}
+
+/* :hover */
+.caixa:hover {
+    background-color: lightblue;
+}
+
+/* :active */
+button:active {
+        background-color: green;
+        color: white;
+}
+
+/* :visited */
+a:visited {
+    color: purple;
+}
+
+/* :checked */
+input:checked + label {
+    color: green;
+    font-weight: bold;
+}
+
+/* :disabled */
+input:disabled {
+    background-color: #f0f0f0;
+}
+
+/* :enabled */
+input:enabled {
+    border-color: green;
+}
+
+/* :focus */
+input:focus, textarea:focus {
+    border: 2px solid blue;
+}
+
+/* :read-only */
+input:read-only {
+    background-color: #e0e0e0;
+}
+
+/* :empty */
+div:empty {
+    background-color: #ffdddd;
+    height: 30px;
+}
+
+/* :first-child */
+ul li:first-child {
+    color: red;
+}
+
+/* :first-of-type */
+div span:first-of-type {
+    font-weight: bold;
+}
+
+/* :last-child */
+ul li:last-child {
+    color: blue;
+}
+
+/* :last-of-type */
+div span:last-of-type {
+    text-decoration: underline;
+}
+
+/* :not() */
+div:not(.excluido) {
+    background-color: #ddffdd;
+}
+
+/* :nth-child() */
+ul li:nth-child(2) {
+    font-style: italic;
+}
+
+/* :nth-last-child() */
+ul li:nth-last-child(2) {
+    background-color: #f5f5dc;
+}

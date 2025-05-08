@@ -1,12 +1,60 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplos de Pseudo-classes</title>
     <link rel="stylesheet" href="style.css">
-    <title>Pseudo Classes</title>
 </head>
 <body>
-    
+    <h2>:hover e :active</h2>
+    <div class="caixa"><p>Passe o mouse aqui</p></div>
+    <button>Clique e segure</button>
+
+    <h2>:visited</h2>
+    <a href="https://example.com" target="_blank">Link Visitado</a>
+
+    <h2>:checked</h2>
+    <input type="checkbox" id="check1" checked>
+    <label for="check1">Opção Marcada</label>
+
+    <h2>:disabled e :enabled</h2>
+    <input type="text" placeholder="Ativo">
+    <input type="text" disabled placeholder="Desabilitado">
+
+    <h2>:focus</h2>
+    <input type="text" placeholder="Foco aqui">
+    <textarea placeholder="Texto aqui..."></textarea>
+
+    <h2>:read-only</h2>
+    <input type="text" value="Só leitura" readonly>
+
+    <h2>:empty</h2>
+    <div></div>
+
+    <h2>:first-child e :last-child</h2>
+    <ul>
+        <li>Primeiro item</li>
+        <li>Segundo item</li>
+        <li>Último item</li>
+    </ul>
+
+    <h2>:first-of-type e :last-of-type</h2>
+    <div>
+        <span>Primeiro span</span>
+        <p>Parágrafo</p>
+        <span>Último span</span>
+    </div>
+
+    <h2>:not()</h2>
+    <div class="excluido">Ignorado pelo :not()</div>
+    <div>Incluído pelo :not()</div>
+
+    <h2>:nth-child() e :nth-last-child()</h2>
+    <ul>
+        <li>Item 1</li>
+        <li>Item 2</li> <!-- :nth-child(2) -->
+        <li>Item 3</li>
+        <li>Item 4</li> <!-- :nth-last-child(2) -->
+    </ul>
 </body>
 </html>
