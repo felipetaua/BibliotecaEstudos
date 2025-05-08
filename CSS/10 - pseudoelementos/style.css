@@ -1,0 +1,17 @@
+/*Pseudo Elementos*/
+
+p::first-line {
+    color: crimson;
+}
+
+input::placeholder {
+    color: #290404;
+}
+
+a::before {
+    content: "🔍";
+}
+
+a::after {
+    content: "✅";
+}
