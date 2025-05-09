@@ -45,15 +45,13 @@ a {
 }
 
 .section-left {
-    margin: 163px 0 0 0;
+    margin: 120px 0 0 0;
     display: inline-block;
     min-width: 280px;
     max-width: 1500px;
 }
 
 img {
-    max-width: 595.18px;
-    height: 500px;
     margin: 0 0 0 125px;
     width:100%;
 }
