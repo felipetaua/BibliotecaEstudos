@@ -1,3 +1,5 @@
+/* quando voce precisa de metade da tela mais 200px, a metade da tela pode ser diferente em tamanho de telas diferentes então serve para conseguir trabalhar com % e px ou outras unidades de medida  */
+
 .container {
     width: calc((100vw /2 ) - 200px);
     height: calc(100vw - 50vh - 475px);
