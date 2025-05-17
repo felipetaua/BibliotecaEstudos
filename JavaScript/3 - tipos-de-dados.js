@@ -44,7 +44,7 @@ console.log(result)
     OBJETOS
 
     propriedades : valor
-    marca: Sansung
+    marca: Samsung
     cor: preta
     tamanho: 75`
 
@@ -83,9 +83,10 @@ let myNumberFour = 30
 // Atribuição então agora o myNumberOne é 20 esta atribuindo o valor ao myNumberOne
 myNumberOne = myNumberTwo
 
+// agora ele esta com valor = a 20
 console.log(myNumberOne)
 
-// == -> sinal de comparação então esse valor(true ou false), vai ser true por conta da atribuição, para ser falso eu precisaria remover a atribuição myNumberOne = myNumberTwo
+// == - dois igual é sinal de comparação (comparar os dois valores) então esse valor é (true ou false), vai ser true por conta da atribuição, para ser falso eu precisaria remover a atribuição myNumberOne = myNumberTwo
 console.log(myNumberOne == myNumberThird)
 
 
@@ -102,16 +103,18 @@ console.log(myNumberThird == myNumberFour)
 */
 
 
+// um array é assim: 
 const numbers = [10, 5, 234, 234]
 
-// nos arrays começamos pela possição zero(0), colocar chaves ("[]")
+// nos arrays começamos pela possição zero(0), colocar chaves ("[valor que voce quer no array]")
 console.log(numbers[0])
 
-// undefined
+// undefined não existe a posição 4 no array, pq começa no zero
 console.log(numbers[4])
 
 
-//qum array pode ter varios tipos de informações objeto, string, numero voce pode guardar cada tipo de dado que quiser
+//um array pode ter varios tipos de informações objeto, string, numero voce pode guardar cada tipo de dado que quiser, não necessáriamente esta preso a só usar numberos, ou só textos ou só objetos
+
 
 
 const people = [{
@@ -121,6 +124,7 @@ const people = [{
     height: 1.7,
     address: "St. Adalberto Rodrigues, 8"
 },
+"Protect",
 {
     name: "Alberto",
     age: 18,
@@ -135,4 +139,5 @@ const people = [{
     height: 1.5,
     address: "St. Junary Fonts, s/N"
 },
+8
 ]

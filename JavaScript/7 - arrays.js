@@ -32,6 +32,7 @@ const people = [
         height: 1.7,
         address: "St. Adalberto Rodrigues, 8"
     },
+    8,
     {
         name: "Alberto",
         age: 18,
@@ -39,20 +40,23 @@ const people = [
         height: 1.9,
         address: "St. Piracicaba Aspar, 34"
     },
+    [4, 56, 567, 0],
     {
         name: "Luiz",
         age: 23,
         sexo: "Male",
         height: 1.5,
         address: "St. Junary Fonts, s/N"
-    }
+    },
+    "Informações",
+    false
 ]
 
 // Acessando o primeiro objeto dentro do array e sua propriedade name
 console.log(people[0].name) // Saída: Rodolfo
 
 // Acessando o terceiro elemento e sua altura
-console.log(people[2].height) // Saída: 1.5
+console.log(people[4].height) // Saída: 1.5
 
 /*
     Reflexão crítica:

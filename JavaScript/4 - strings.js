@@ -38,6 +38,7 @@ console.log(myTextWithSuperPowers)
     - Use Template Literals (` `) sempre que precisar:
         * Inserir variáveis no meio do texto;
         * Escrever textos longos ou multilinhas;
+    
     - Para textos simples, tanto faz usar aspas simples ou duplas. Escolha uma e mantenha padrão.
     - Evite misturar tipos de aspas no mesmo projeto sem necessidade.
 */

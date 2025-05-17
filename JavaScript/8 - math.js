@@ -1,5 +1,17 @@
 /*
     Math
+
+    Math é um objeto global em JavaScript que oferece funções e constantes matemáticas.
+
+    Entre eles existem várias funcionalidades:
+    
+    - Arredondamentos.
+    - Operações trigonométricas.
+    - Logaritmos.
+    - Aleatoriedade.
+    - Potências.
+    - Máximos e mínimos.
+    - Raízes quadradas.
 */
 
 console.log(Math.PI + 2)// mostra o valor do PI
