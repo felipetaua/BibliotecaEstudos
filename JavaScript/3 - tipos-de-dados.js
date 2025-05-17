@@ -88,3 +88,47 @@ console.log(myNumberOne == myNumberThird)
 // resultado falso porque eles não são iguais
 console.log(myNumberThird == myNumberFour)
 
+
+
+
+/* 
+    ARRAY - Vetor - lista 
+
+    Se cada pessoa que voce possuisse precisasse de uma variavel então é necessario uma forma mais usual de fazer
+*/
+
+
+const numbers = [10, 5, 234, 234]
+
+// nos arrays começamos pela possição zero(0), colocar chaves ("[]")
+console.log(numbers[0])
+
+// undefined
+console.log(numbers[4])
+
+
+//qum array pode ter varios tipos de informações objeto, string, numero voce pode guardar cada tipo de dado que quiser
+
+
+const people = [{
+    name: "Rodolfo",
+    age: 28,
+    sexo: "Male",
+    height: 1.7,
+    address: "St. Adalberto Rodrigues, 8"
+},
+{
+    name: "Alberto",
+    age: 18,
+    sexo: "Male",
+    height: 1.9,
+    address: "St. Piracicaba Aspar, 34"
+},
+{
+    name: "Luiz",
+    age: 23,
+    sexo: "Male",
+    height: 1.5,
+    address: "St. Junary Fonts, s/N"
+},
+]
