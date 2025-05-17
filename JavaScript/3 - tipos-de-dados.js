@@ -1,5 +1,5 @@
 /*
-    String 
+    STRING
 
     - Cadeia de Caracteres
 
@@ -10,15 +10,19 @@ let myFirstString = "E aqui dentro posso escrever o que eu quiser!"
 let mySeccondString = 'Agora com aspas simples'
 let mythirdString = `Com a crase eu também consigo` // template literals ou template string
 
-// se o seu texto precisar utilizar aspas ou aspas simples é possivel alternar entre a versão com aspas ou aspas simples para não ter erro
+// se o seu texto precisar utilizar aspas duplas ou aspas simples é possivel alternar entre a versão com aspas duplas ou aspas simples para não ter erro np código
 let text = 'Fulano de Tal falou o seguinte: "eu aprendi js"'
 
 
 let numberOfPeopleInClass = 34
-// a crase tem a funcionalidade de conseguir colocar variaveis direto
-let myTextWithSuperPowers = `Tinham exatamente ${numberOfPeopleInClass} pessoas na aula, e fizeram uma conta que o resultado foi ${10 + 45}`
+// a crase tem a funcionalidade de conseguir colocar variaveis direto no comentário e voce consegue dar enter e utilizar em mais linhas
+let myTextWithSuperPowers = `
+    Tinham exatamente ${numberOfPeopleInClass} pessoas na aula, e fizeram uma conta que o resultado foi ${10 + 45}
+`
 
 console.log(myTextWithSuperPowers)
+
+
 
 /* NUMBERS */
 
@@ -28,7 +32,7 @@ const numberTwo = "234/2" // string
 console.log(number1)
 console.log(numberTwo) 
 
-const numberOne = 234.0 // 
+const numberOne = 234.0 // numero com virgula tambem funciona
 const myString = "abc"
 const result = numberOne / myString // ao dividir vai dar NaN - Not a Number
 
