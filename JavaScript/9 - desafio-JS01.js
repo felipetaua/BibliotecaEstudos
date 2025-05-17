@@ -38,3 +38,51 @@ João e João, imprime true. João e Maria, imprime false.
 
 [x] Crie um programa que mostra o tamanho do Array. Ex: const array = [0, 1] imprime: 2. const array = ["banana", "Maça", "Laranja] imprime: 3
 */
+
+
+
+/* VAMOS PRATICAR MAIS
+
+// 🧮 Operações e lógica simples
+[x] Faça um programa que subtraia dois números e diga se o resultado é positivo ou negativo.
+[x] Faça um programa que eleve um número ao quadrado, depois subtraia 5.
+[x] Faça um programa que calcule o triplo de um número e imprima se ele é maior que 100.
+
+// 🧩 Comparações e condições
+[x] Faça um programa que compare dois números e diga qual é o maior, ou se são iguais.
+[ ] Faça um programa onde o usuário insere uma idade, e o programa diz se ele é maior de idade (18+).
+[ ] Faça um programa que receba uma senha e verifique se é igual a "CodeClub2025". Se sim, imprime "Acesso liberado". Se não, imprime "Senha incorreta".
+
+// 🧰 Trabalhando com arrays
+[ ] Faça um programa que adicione 5 frutas em um array e imprima todas elas.
+[ ] Faça um programa que remova o último item de um array e depois imprima o array atualizado.
+[ ] Faça um programa que adicione nomes ao array somente se o nome tiver mais de 3 letras.
+[ ] Faça um programa que imprima o primeiro e o último item de um array.
+
+// 🧠 Trabalhando com objetos
+[ ] Crie um objeto chamado `livro`, com as seguintes propriedades: título, autor, páginas, editora e ano.
+[ ] Crie um programa que compare a idade de duas pessoas (dois objetos) e imprima quem é mais velho.
+[ ] Crie um programa que receba um objeto `aluno` com notas em três matérias e imprima a média final.
+
+// 🔁 Laços e lógica
+[ ] Crie um programa que imprima os números de 1 a 10 usando um loop.
+[ ] Crie um programa que imprima os números pares entre 1 e 20.
+[ ] Crie um programa que, dado um array de números, some todos os valores.
+
+// 🎲 Números aleatórios e desafios lógicos
+[ ] Crie um programa que gere dois números aleatórios entre 1 e 10 e diga qual é o maior.
+[ ] Crie um programa que gere uma senha aleatória de 8 caracteres (com letras e números).
+[ ] Crie um programa onde o usuário tenta adivinhar um número aleatório entre 1 e 5. Se acertar, imprime "Parabéns!".
+
+// 👥 Trabalhando com entrada e interação
+[ ] Crie um programa que pergunte o nome do usuário e diga "Olá, [nome]! Seja bem-vindo ao CodeClub".
+[ ] Crie um programa que peça a idade e diga em que ano a pessoa nasceu.
+[ ] Crie um programa que pergunte a cor favorita do usuário e diga: "Essa cor é muito bonita!"
+
+// 🌟 Desafios bônus
+[ ] Crie um programa que receba um número e diga se ele é primo.
+[ ] Crie um programa que transforme graus Celsius em Fahrenheit.
+[ ] Crie um programa que pergunte o nome de 3 pessoas e imprima em ordem alfabética.
+[ ] Crie um programa que diga se uma palavra é um palíndromo (lida de trás pra frente é igual). Ex: "arara", "radar".
+
+*/
