@@ -30,6 +30,8 @@ const result = numberOne / myString
 
 console.log(result) // resultado: NaN (Not a Number)
 
+
+
 /*
     Entenda o NaN (Not a Number):
     - Indica que a operação matemática falhou.
@@ -50,3 +52,6 @@ console.log(result) // resultado: NaN (Not a Number)
         console.log(isNaN(result)) // true
 */
 
+console.log(isNaN(result)) // -> resultado true 
+
+console.log(isNaN(numberOne)) // -> resultado false
