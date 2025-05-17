@@ -81,7 +81,7 @@ myNumberOne = myNumberTwo
 
 console.log(myNumberOne)
 
-// == -> sinal de comparação então esse valor vai ser true por conta da atribuição, para ser falso eu precisaria remover a atribuição myNumberOne = myNumberTwo
+// == -> sinal de comparação então esse valor(true ou false), vai ser true por conta da atribuição, para ser falso eu precisaria remover a atribuição myNumberOne = myNumberTwo
 console.log(myNumberOne == myNumberThird)
 
 
