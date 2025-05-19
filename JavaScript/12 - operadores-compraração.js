@@ -1,27 +1,44 @@
-/* OPERADORES DE COMPARAÇÃO
+/* 
+OPERADORES DE COMPARAÇÃO EM JAVASCRIPT
 
-==  -> Igual // Ele compara o valor, mas não compara o tipo do valor //nunca use esse aquif
-=== -> TOTALMENTE Igual // Ele verifica o tipo de dado!
+==   -> Igual (compara apenas o valor, **não** o tipo)
+===  -> Estritamente igual (compara valor **e tipo**)
 
-!=  -> Diferente // Ele compara o valor, mas não compara o tipo do valor //nunca use esse aqui
-!== -> TOTALMENTE Diferente  // Ele verifica o tipo do dado!
+!=   -> Diferente (compara apenas o valor, **não** o tipo)
+!==  -> Estritamente diferente (compara valor **e tipo**)
 
+>    -> Maior que
+<    -> Menor que
+>=   -> Maior ou igual
+<=   -> Menor ou igual
+
+RECOMENDAÇÃO: SEMPRE USE === e !==
+Evite == e != para evitar bugs com coerção implícita de tipos.
 */
 
-// Igual
+// EXEMPLO 1: COMPARAÇÃO DE STRINGS
 
-const firstPerson = 'João'
-const seccondPerson = 'Maria'
+const firstPerson = 'João';
+const secondPerson = 'Maria';
 
-const firstNumber = "23"
-const seccondNumber = 23
+console.log("João é igual a Maria (==)?", firstPerson == secondPerson);   // false
+console.log("João é igual a Maria (===)?", firstPerson === secondPerson); // false
 
-console.log(firstPerson == seccondPerson)
+// EXEMPLO 2: COMPARAÇÃO DE NÚMEROS COM STRINGS
 
-console.log(firstNumber == seccondNumber)
-console.log(firstNumber === seccondNumber)
+const firstNumber = "23";  // string
+const secondNumber = 23;   // number
 
+console.log("Comparação com == :", firstNumber == secondNumber);   // true 😬 (porque converte tipos!)
+console.log("Comparação com ===:", firstNumber === secondNumber); // false ✅ (sem conversão de tipo)
 
-// Diferente
+// O mesmo vale para comparação negativa:
 
-console.log(firstNumber !== seccondNumber)
+console.log("Comparação com != :", firstNumber != secondNumber);   // false 😬 (são considerados iguais)
+console.log("Comparação com !==:", firstNumber !== secondNumber); // true ✅ (tipos diferentes)
+
+// Comparações numéricas
+console.log("23 > 10:", secondNumber > 10);   // true
+console.log("23 < 10:", secondNumber < 10);   // false
+console.log("23 >= 23:", secondNumber >= 23); // true
+console.log("23 <= 22:", secondNumber <= 22); // false

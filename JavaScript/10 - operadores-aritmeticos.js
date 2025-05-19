@@ -1,63 +1,94 @@
-/* OPERADORES aritmétricos
+/* OPERADORES ARITMÉTICOS EM JAVASCRIPT
 
 +   -> Adição
 -   -> Subtração
 *   -> Multiplicação
 /   -> Divisão
-%   -> Resto
+%   -> Resto da divisão (módulo)
 ++  -> Incremento
 --  -> Decremento
-**  -> Exponencial
+**  -> Exponencial (potência)
 
+Esses operadores são usados para realizar operações matemáticas básicas e avançadas.
 */
 
-const soma = 20 + 21
-const subtracao = 15 - 20
-const mulplicacao = 2 * 12
-const divisao = 20 / 5
-const resto = 7 % 3
+// Exemplos com valores diretos
+const soma = 20 + 21;               // 41
+const subtracao = 15 - 20;          // -5
+const multiplicacao = 2 * 12;       // 24
+const divisao = 20 / 5;             // 4
+const resto = 7 % 3;                // 1 (7 dividido por 3 dá 2, sobra 1)
 
-console.log("operaçãoes: ", resto)
+console.log("Adição: ", soma);
+console.log("Subtração: ", subtracao);
+console.log("Multiplicação: ", multiplicacao);
+console.log("Divisão: ", divisao);
+console.log("Resto da divisão: ", resto);
 
-//Incremento
+/* 
+INCREMENTO E DECREMENTO
 
-let myNumberIncremento = 10
-myNumberIncremento++
-myNumberIncremento++
-myNumberIncremento++
-myNumberIncremento++ 
-
-console.log("Incremento: ", myNumberIncremento) // a cada myNumberIncremento++ ele soma +1
-
-//Decremento
-
-let myNumberDecremento = 10
-myNumberIncremento--
-myNumberIncremento--
-myNumberIncremento--
-myNumberIncremento--  
-
-console.log("Decremento: ", myNumberIncremento)
-
-// Experiência
-
-let NumberTeste = 10
-
-console.log(NumberTeste++) //Porque não o resultado não é 11?
-
-/* Explicação porque o JavaScript primeiro exibe o numero na tela e depois não tem como fazer a operação
-
-Mas se eu quiser que apareça 11 no resultado é só alternar a ordem
-Ex: ++NumberTeste
-
+O operador ++ soma 1 ao valor atual.
+O operador -- subtrai 1 do valor atual.
+Há duas formas de usá-los: pós-fixado (x++) e pré-fixado (++x).
 */
-console.log(++NumberTeste)
 
-// O mesmo conceito se aplica para o decremento
+let myNumber = 10;
 
-console.log(NumberTeste--)
-console.log(--NumberTeste)
+// Incrementando passo a passo
+myNumber++;
+myNumber++;
+myNumber++;
+myNumber++;
 
-// Exponencial
+console.log("Incremento (++):", myNumber); // Deve mostrar 14
 
-console.log(2 ** 3)
+// Decrementando
+myNumber--;
+myNumber--;
+myNumber--;
+myNumber--;
+
+console.log("Decremento (--):", myNumber); // Volta a 10
+
+/*
+DIFERENÇA ENTRE PÓS-INCREMENTO E PRÉ-INCREMENTO
+*/
+
+let numeroTeste = 10;
+
+console.log("Pós-incremento (numeroTeste++):", numeroTeste++); 
+// Primeiro imprime o valor original (10), depois incrementa para 11
+
+console.log("Após pós-incremento:", numeroTeste); // Agora é 11
+
+console.log("Pré-incremento (++numeroTeste):", ++numeroTeste); 
+// Primeiro incrementa para 12, depois imprime
+
+// Funciona igual para o decremento
+console.log("Pós-decremento (numeroTeste--):", numeroTeste--); 
+// Imprime 12, depois decrementa para 11
+
+console.log("Pré-decremento (--numeroTeste):", --numeroTeste); 
+// Decrementa para 10, depois imprime
+
+/*
+EXPONENCIAL (**)
+Calcula a potência de um número. Por exemplo:
+2 ** 3 = 2 * 2 * 2 = 8
+*/
+
+console.log("Exponencial (2 ** 3):", 2 ** 3); // 8
+
+// Mais exemplos
+console.log("3 ** 4 =", 3 ** 4);     // 81
+console.log("10 ** 2 =", 10 ** 2);   // 100
+console.log("5 ** 0 =", 5 ** 0);     // 1 (qualquer número elevado a zero é 1)
+
+/*
+DICA:
+Use esses operadores com variáveis para manipular contadores, loops, pontuação de jogos e outras situações do mundo real.
+
+Essa estrutura permite revisar com clareza e compreender não apenas o *resultado*, mas também a *lógica por trás*.
+*/
+
