@@ -61,8 +61,7 @@ João e João, imprime true. João e Maria, imprime false.
 [x] Crie um programa que peça a idade e diga em que ano a pessoa nasceu.
 [x] Crie um programa que pergunte a cor favorita do usuário e diga: "Essa cor é muito bonita!"
 
-[ ] Crie um programa que receba um número e diga se ele é primo.
-[ ] Crie um programa que transforme graus Celsius em Fahrenheit.
-[ ] Crie um programa que pergunte o nome de 3 pessoas e imprima em ordem alfabética.
+[x] Crie um programa que receba um número e diga se ele é primo.
+[x] Crie um programa que transforme graus Celsius em Fahrenheit.
 
 */
