@@ -17,4 +17,4 @@ const object2 = [
     }
 ]
 
-console.log(`João e João, imprime ${object1[0].name == object1[0].name}. João e Maria, imprime ${object1[0].name == object2[0].name}`)
+console.log(`João e João, imprime ${object1[0].name === object1[0].name}. João e Maria, imprime ${object1[0].name === object2[0].name}`)

@@ -3,4 +3,4 @@
 let number1 = 2
 let number2 = 5
 
-console.log(2 > 5)
+console.log(number1 > number2)
