@@ -6,12 +6,11 @@ let name1 = "tauã"
 let name2 =  "felipe"
 
 // nomes diferentes
-console.log(name1 == name2) // false
-
+console.log(name1 === name2) // false
 
 
 let name3 = "João"
 let name4 = "João"
 
 // nomes iguais
-console.log(name3 == name4)
+console.log(name3 === name4)

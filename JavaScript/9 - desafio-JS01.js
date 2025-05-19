@@ -57,9 +57,9 @@ João e João, imprime true. João e Maria, imprime false.
 [x] Crie um programa que gere uma senha aleatória de 8 caracteres (com letras e números).
 [x] Crie um programa onde o usuário tenta adivinhar um número aleatório entre 1 e 5. Se acertar, imprime "Parabéns!".
 
-[ ] Crie um programa que pergunte o nome do usuário e diga "Olá, [nome]! Seja bem-vindo ao CodeClub".
-[ ] Crie um programa que peça a idade e diga em que ano a pessoa nasceu.
-[ ] Crie um programa que pergunte a cor favorita do usuário e diga: "Essa cor é muito bonita!"
+[x] Crie um programa que pergunte o nome do usuário e diga "Olá, [nome]! Seja bem-vindo ao CodeClub".
+[x] Crie um programa que peça a idade e diga em que ano a pessoa nasceu.
+[x] Crie um programa que pergunte a cor favorita do usuário e diga: "Essa cor é muito bonita!"
 
 [ ] Crie um programa que receba um número e diga se ele é primo.
 [ ] Crie um programa que transforme graus Celsius em Fahrenheit.
