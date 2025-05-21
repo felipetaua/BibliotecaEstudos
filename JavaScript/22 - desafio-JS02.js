@@ -7,20 +7,20 @@
 [x] Faça um programa que compare o um número com 10 e
 imprime na tela "o número é maior, o número é menor o número é igual"
 [x] Faça um programa que verifica se uma pessoa é brasileira ou nao
-[ ] Faça um programa que gere um número aleatório entre 1 e 10, esse número é o número 'ganhador'.
+[x] Faça um programa que gere um número aleatório entre 1 e 10, esse número é o número 'ganhador'.
 Então ele também irá gerar um número aleatório entre 1 e 10, e verifica se a pessoa ganhou ou não.
 Em caso de ter ganhado, mostra o prêmio, se não ganhou, mostra outra mensagem.
 
-[ ] Faça um programa que receba 3 números inteiros, e deve imprimir, qual é o maior, qual é o menor.
+[x] Faça um programa que receba 3 números inteiros, e deve imprimir, qual é o maior, qual é o menor.
 
 [ ] Crie 5 objetos nesse formato
-
-none: ""
-idade:""
-sexo:""
-profissao: ""
-nacionalidade:""
-
+{
+    none: ""
+    idade:""
+    sexo:""
+    profissao: ""
+    nacionalidade:""
+}
 Ao rodar o programa, deve imprimir se a pessoa é aprovada ou não no processo,
 a pessoa deve ser maior de idade e brasileira para ser aprovada.
 
