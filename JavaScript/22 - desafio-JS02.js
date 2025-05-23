@@ -13,7 +13,7 @@ Em caso de ter ganhado, mostra o prêmio, se não ganhou, mostra outra mensagem.
 
 [x] Faça um programa que receba 3 números inteiros, e deve imprimir, qual é o maior, qual é o menor.
 
-[ ] Crie 5 objetos nesse formato
+[x] Crie 5 objetos nesse formato
 {
     none: ""
     idade:""

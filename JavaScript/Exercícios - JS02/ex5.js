@@ -15,9 +15,9 @@ a pessoa deve ser maior de idade e brasileira para ser aprovada.
 const peoples = [{
     nome: "Rodolfo",
     idade: 28,
-    sexo:"Masculino",
+    sexo: "Masculino",
     profissao: "Engenheiro de Software",
-    nacionalidade:"Brasileiro"
+    nacionalidade: "Brasileiro"
 },
 {
     nome: "Tauã",
@@ -51,8 +51,8 @@ const peoples = [{
 
 
 for(i = 0; i < peoples.length; i++ ) {
-    if(peoples[i].idade === 18 && peoples[i].nacionalidade === "Brasileiro") {
-        console.log(`${peoples[i].name} aprovado`)
+    if(peoples[i].idade >= 18 && peoples[i].nacionalidade === "Brasileiro") {
+        console.log(`${peoples[i].nome} aprovado`)
     } else {
         console.log(`${peoples[i].nome} foi reprovado`)
     }
