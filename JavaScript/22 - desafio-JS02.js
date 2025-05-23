@@ -2,14 +2,14 @@
 
 - Por que fazer esses exercícios 7 Agora é a hora de treinar seu cérebro a como "conversar com o computador".
 - Você precisa desenvolver um lógica forte, para enfrentar qualquer desafio.
-- Desenvolver raciocio lógico
+- Desenvolver raciocino lógico
 
 [x] Faça um programa que compare o um número com 10 e
 imprime na tela "o número é maior, o número é menor o número é igual"
 [x] Faça um programa que verifica se uma pessoa é brasileira ou nao
 [x] Faça um programa que gere um número aleatório entre 1 e 10, esse número é o número 'ganhador'.
 Então ele também irá gerar um número aleatório entre 1 e 10, e verifica se a pessoa ganhou ou não.
-Em caso de ter ganhado, mostra o prêmio, se não ganhou, mostra outra mensagem.
+Em caso de ter ganhado, mostra o premio, se não ganhou, mostra outra mensagem.
 
 [x] Faça um programa que receba 3 números inteiros, e deve imprimir, qual é o maior, qual é o menor.
 
@@ -30,7 +30,7 @@ São permitidas notas de 0 a 10. Cada nota deve conter uma mensagem diferente
 [ ] Faça um programa onde leia um numero e diga se ele é par ou impar
 
 [ ] Faça um programa onde leia um número e diga se ele é:
-- imgar,
+- impar,
 - par,
 - é um número primo e impar,
 - é par e divisivel por 5.
