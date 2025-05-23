@@ -1,4 +1,4 @@
-/* OPERADORES LÒGICOS
+/* OPERADORES LÓGICOS
 
 &&  -> E  // FILHO OBEDIENTE
     true && true = true
@@ -16,7 +16,7 @@
 
 
     Lógica E
-    Para fazer uma tranferência, o que é necessário?
+    Para fazer uma transferência, o que é necessário?
     - Ter saldo em conta
     - A conta não pode estar bloqueada
     - A conta de destino precisa estar correta

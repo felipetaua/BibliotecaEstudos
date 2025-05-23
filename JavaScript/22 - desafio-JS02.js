@@ -24,12 +24,12 @@ Em caso de ter ganhado, mostra o premio, se não ganhou, mostra outra mensagem.
 Ao rodar o programa, deve imprimir se a pessoa é aprovada ou não no processo,
 a pessoa deve ser maior de idade e brasileira para ser aprovada.
 
-[ ] Faça um programa onde os jurados vão dar a explicação para cada nota dada.
+[x] Faça um programa onde os jurados vão dar a explicação para cada nota dada.
 São permitidas notas de 0 a 10. Cada nota deve conter uma mensagem diferente
 
-[ ] Faça um programa onde leia um numero e diga se ele é par ou impar
+[x] Faça um programa onde leia um numero e diga se ele é par ou impar
 
-[ ] Faça um programa onde leia um número e diga se ele é:
+[x] Faça um programa onde leia um número e diga se ele é:
 - impar,
 - par,
 - é um número primo e impar,

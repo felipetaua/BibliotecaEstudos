@@ -1,4 +1,4 @@
-/* OPERADOR TERNÀRIO OU CONDICIONAL
+/* OPERADOR TERNÁRIO OU CONDICIONAL
 
     ?   se
     :   se não
@@ -10,11 +10,11 @@
 const rain = true
 
 // Se estiver chovendo, leve guarda-chuva, senão deixe.
-const umbrela = rain 
+const umbrella = rain 
   ? 'levar guarda-chuva' 
   : 'deixar guarda-chuva'
 
-console.log("Situação climática:", umbrela)
+console.log("Situação climática:", umbrella)
 
 
 

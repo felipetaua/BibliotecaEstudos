@@ -7,47 +7,47 @@ const nota = 0
 
 switch (nota) {
     case 0:
-        console.log("O que aconteceu?")
+        console.log("Você foi desclassificado")
     break;
 
     case 1:
-        console.log("melhor que zero")
+        console.log("Infelizmente voce cometeu duas faltas graves")
     break;
 
     case 2:
-        console.log("melhore!")
+        console.log("Infelizmente cometeu uma falta grave")
     break;
 
     case 3:
-        console.log("melhorar pode ser uma escolha")
+        console.log("cometeu duas faltas médias")
     break;
 
     case 4:
-        console.log("Foi um quase")
+        console.log("Voce cometeu uma falta média")
     break;
 
     case 5:
-        console.log("Mediano eu diria")
+        console.log("Apenas uma falta")
     break;
 
     case 6:
-        console.log("Ok!")
+        console.log("Voce foi muito genérico")
     break;
 
     case 7:
-        console.log("Bom!")
+        console.log("Gostei mais faltou técnica")
     break;
 
     case 8:
-        console.log("Ótima nota")
+        console.log("voce mandou muito bem na técnica")
     break;
 
     case 9:
-        console.log("Incrível sua nota")
+        console.log("Uma apresentação surpreendente")
     break;
 
     case 10:
-        console.log("Excelente nota")
+        console.log("Voce encantou! Um show de tecnica e criatividade")
     break;
 
     default:
