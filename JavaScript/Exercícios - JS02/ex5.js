@@ -20,11 +20,11 @@ const peoples = [{
     nacionalidade: "Brasileiro"
 },
 {
-    nome: "Tauã",
+    nome: "kauane",
     idade: 18,
     sexo: "Masculino",
     profissao: "Desenvolvedor Front-end",
-    nacionalidade: "Brasileiro"
+    nacionalidade: "Brasileira"
 },
 {
     nome: "Nicoly",
@@ -51,9 +51,9 @@ const peoples = [{
 
 
 for(i = 0; i < peoples.length; i++ ) {
-    if(peoples[i].idade >= 18 && peoples[i].nacionalidade === "Brasileiro") {
-        console.log(`${peoples[i].nome} aprovado`)
+    if(peoples[i].idade >= 18 && peoples[i].nacionalidade === "Brasileiro" || peoples[i].nacionalidade === "Brasileira") {
+        console.log(`${peoples[i].nome} aprovado no processo`)
     } else {
-        console.log(`${peoples[i].nome} foi reprovado`)
+        console.log(`${peoples[i].nome} foi reprovado no processo`)
     }
 }

@@ -42,3 +42,18 @@ switch (result) {
         console.log("POSSUI NÚMEROS MISTOS")
     break;
 }
+
+// OUTRA FORMA DE FAZER - RESOLUÇÃO
+
+const numberOne = 34
+const numberTwo = 20
+const numberThree = 32
+const numberFour = 4
+
+if(numberOne % 2 === 0 && numberTwo % 2 === 0 && numberThree % 2 === 0 && numberFour % 2 === 0) {
+    console.log("Todos são pares")
+} else if (numberOne % 2 !== 0 && numberTwo % 2 !== 0 && numberThree % 2 !== 0 && numberFour % 2 !== 0) {
+    console.log("Todos são impares")
+} else {
+    console.log("Tudo misturado")
+}

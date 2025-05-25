@@ -7,7 +7,7 @@ const numberUser = 6
 if ( numberUser > numberFix) {
     console.log("O Número do usuário é maior que 10")
 } else if ( numberUser < numberFix) {
-    console.log("O Número do usúario é menor que 10")
+    console.log("O Número do usuário é menor que 10")
 } else if (numberUser === numberFix) {
     console.log("Os números são iguais")
 }

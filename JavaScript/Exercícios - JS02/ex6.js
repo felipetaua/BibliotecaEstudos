@@ -3,9 +3,9 @@ São permitidas notas de 0 a 10. Cada nota deve conter uma mensagem diferente
  */
 
 
-const nota = 0
+const score = 0
 
-switch (nota) {
+switch (score) {
     case 0:
         console.log("Você foi desclassificado")
     break;
