@@ -9,8 +9,8 @@ const fahrenheit = (celsius * 1.8) + 32
 
 console.log(fahrenheit)
 
-// Fahrenheit para Celsius C = (F - 32) * 5/9. 
 
+// Fahrenheit para Celsius C = (F - 32) * 5/9. 
 
 const f = 89.6
 
