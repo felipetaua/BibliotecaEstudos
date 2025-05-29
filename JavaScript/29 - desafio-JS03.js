@@ -5,10 +5,10 @@ a função deve imprime na tela os número de 1 até o número que você enviou.
 e escrever a tabuada de 1 a 10 do valor lido.
 [x] Escreva um programa onde, você chame uma função, e ela diga a hora exata!
 [x] Escreva um programa onde, você chame uma função, e ela diga que ano estamos
-[ ] Escreva um programa onde, você chame uma função mandando dois argumentos, 2 números, e a função responde qual número é maior
-[x] Escreva um programa onde, você chame uma função mandando 2 argumentos, e a função RETORNA o maior e você mostra-lo na tela, fora da
+[x] Escreva um programa onde, você chame uma função mandando dois argumentos, 2 números, e a função responde qual número é maior
+[x] Escreva um programa onde, você chame uma função mandando 2 argumentos, e a função RETORNA o maior e você mostra-lo na tela, fora da função
 
-[ ] A prefeitura de uma cidade fez uma pesquisa entre seus habitantes, coletando dados sobre o salario e numero de filhos. A prefeitura de
+[ ] A prefeitura de uma cidade fez uma pesquisa entre seus habitantes, coletando dados sobre o salario e numero de filhos. A prefeitura dessa cidade:
 - média do salário da população;
 - média do número de filhos;
 - maior salário;
