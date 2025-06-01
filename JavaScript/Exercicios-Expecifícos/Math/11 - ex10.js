@@ -6,6 +6,7 @@
 //       → "🔽 Muito baixo!" se o chute for menor.
 //     - O jogo continua até acertar.
 //     - Mostre quantas tentativas foram necessárias.
+
 const numeroSorteado = Math.floor(Math.random() * 50) + 1;
 let tentativas = 0;
 

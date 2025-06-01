@@ -6,25 +6,23 @@
 //       → Entre 21 e 30 → "Clima agradável."
 //       → Acima de 30 → "Clima quente!"
 
-const temperaturaRandom = Math.floor(Math.random() * ( 40 - -10 + 1)) + -10;
+const temperaturaRandom = Math.floor(Math.random() * (40 - (-10) + 1)) + (-10);
 
+// 🔍 Função que analisa a temperatura
 function analiseTemperatura(temperatura) {
+    let mensagem = '';
 
     if (temperatura < 0) {
-        console.log("Está congelando!", temperatura,"Cº")
-    } else if (temperatura >= 0  && temperatura <= 20) {
-        console.log("Clima frio.", temperatura,"Cº")
-    } else if (temperatura >= 21 && temperatura <= 30) {
-        console.log("Clima agradável.", temperatura,"Cº")
-    } else if (temperatura > 30) {
-        console.log("Clima quente!", temperatura,"Cº")
+        mensagem = "❄️ Está congelando!";
+    } else if (temperatura <= 20) {
+        mensagem = "🧥 Clima frio.";
+    } else if (temperatura <= 30) {
+        mensagem = "🌤️ Clima agradável.";
     } else {
-        console.log("Temperatura resgistrada:",temperaturaRandom,"Cº")
+        mensagem = "🔥 Clima quente!";
     }
 
-    
+    console.log(`${mensagem} 🌡️ Temperatura: ${temperatura}°C`);
 }
 
-analiseTemperatura(temperaturaRandom)
-
-
+analiseTemperatura(temperaturaRandom);

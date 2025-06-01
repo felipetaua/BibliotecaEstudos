@@ -12,9 +12,7 @@ function caraCoroa(value) {
         console.log("Cara")
     } else if (value === 1) {
         console.log("Coroa")
-    } else {
-        console.log("O valor não pode ser utilizado")
-    }
+    } 
 }
 
 caraCoroa(numberRandom)

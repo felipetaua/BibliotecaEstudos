@@ -5,26 +5,24 @@
 //       → Desconto aplicado
 //       → Valor final com desconto
 
-produto = {
-    nome: "Ventilador",
-    valor: 100
+function gerarNotaFiscal(produto) {
+    const descontoPercentual = Math.floor(Math.random() * (30 - 5 + 1) + 5);
+    const valorDesconto = (produto.valor * descontoPercentual) / 100;
+    const valorFinal = (produto.valor - valorDesconto).toFixed(2);
+
+    console.log(`
+        🧾 NOTA FISCAL
+        ------------------------------
+        Produto: ${produto.nome}
+        Valor original: R$ ${produto.valor.toFixed(2)}
+        Desconto aplicado: ${descontoPercentual}%
+        Valor do desconto: R$ ${valorDesconto.toFixed(2)}
+        Valor final com desconto: R$ ${valorFinal}
+        ------------------------------
+    `);
 }
 
-const descontoRandom = Math.floor(Math.random() * (30 - 5 + 1) + 5 ) / 100 
+// ✅ Exemplo de uso:
+const produto = { nome: "Ventilador", valor: 100 };
+gerarNotaFiscal(produto);
 
-
-function notaFiscal(nomeProduto,valorProduto, descontoRandom) {
-    desconto = valorProduto * descontoRandom
-    descontoFormatado = desconto.toFixed(0)
-    
-    produtoSemDesconto = valorProduto - descontoFormatado
-    console.log
-    (`
-        Nome do produto: ${nomeProduto}
-        Valor do produto: R$${valorProduto}
-        Valor do desconto: ${descontoFormatado}%
-        Valor final com desconto: R$${produtoSemDesconto}
-    `)
-}
-
-notaFiscal(produto.nome, produto.valor, descontoRandom)
