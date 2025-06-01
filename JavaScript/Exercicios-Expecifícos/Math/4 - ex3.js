@@ -5,10 +5,18 @@
 //       → Arredondado para baixo (Math.floor())
 //       → Arredondamento normal (Math.round())
 
-const userNumber = 2.5
+function mostrarArredondamentos(numero) {
+    const arredondadoCima = Math.ceil(numero);
+    const arredondadoBaixo = Math.floor(numero);
+    const arredondadoNormal = Math.round(numero);
 
-const roundingUp = Math.ceil(userNumber)
-const roundingDown = Math.floor(userNumber)
-const roundingDefault = Math.round(userNumber)
+    console.log(`
+        🔢 Número informado: ${numero}
+        ⬆️ Arredondado para cima: ${arredondadoCima}
+        ⬇️ Arredondado para baixo: ${arredondadoBaixo}
+        🎯 Arredondamento padrão (mais próximo): ${arredondadoNormal}
+    `);
+}
 
-console.log(`Arredondamento para cima: ${roundingUp} \n Arredondamento para baixo: ${roundingDown} \n Arredondamento mais próximo: ${roundingDefault}`)
+// 🔸 Teste:
+mostrarArredondamentos(2.5);
