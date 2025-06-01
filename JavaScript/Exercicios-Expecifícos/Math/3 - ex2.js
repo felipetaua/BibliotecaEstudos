@@ -4,11 +4,11 @@
 //       → Segundo: Expoente
 //     - Calcule e mostre o resultado usando Math.pow() ou **.
 
-const base =  25
-const expoente = 5
+function calculadoraPotencia(base, expoente) {
+    const resultado = base ** expoente;
+    console.log(`🔢 Base: ${base}`);
+    console.log(`⬆️ Expoente: ${expoente}`);
+    console.log(`⚙️ Resultado: ${resultado}`);
+}
 
-const calculoPotencia = base ** expoente
-
-const calcPot = Math.pow(base, expoente)// ex2
-
-console.log("O resultado é:", calculoPotencia)
+calculadoraPotencia(25, 5);

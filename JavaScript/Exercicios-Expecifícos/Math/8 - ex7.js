@@ -3,16 +3,15 @@
 //     - Se 0 → Cara / Se 1 → Coroa.
 //     - Crie uma função chamada caraCoroa().
 
-const numberRandom = Math.floor(Math.random() * (1 - 0 + 1))
-console.log(numberRandom)
+function caraCoroa() {
+    const resultado = Math.floor(Math.random() * 2); // 0 ou 1
+    const lado = resultado === 0 ? "Cara" : "Coroa";
 
-
-function caraCoroa(value) {
-    if (value === 0) {
-        console.log("Cara")
-    } else if (value === 1) {
-        console.log("Coroa")
-    } 
+    console.log(`
+🎲 JOGO: CARA OU COROA
+Resultado: ${lado}
+------------------------
+    `);
 }
 
-caraCoroa(numberRandom)
+caraCoroa();
