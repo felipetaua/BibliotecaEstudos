@@ -23,37 +23,44 @@
 nomeCliente = "Rochele"
 valorTotalCompra = 5000
 primeiraCompraCliente = true
-compraVista = true
+compraVista = false
 
 
-function geraDesconto(valorCompra, primeiraCompra, aVista) {
+function geraDesconto(primeiraCompra, aVista, valorCompra) {
     let desconto = 0
     if (primeiraCompra === true && aVista === true && valorCompra > 1000) {
         returndesconto = 30
-    } if (primeiraCompra === true && aVista === true && valorCompra < 1000 || valorCompra > 500) {
+    } 
+    if (primeiraCompra === true && aVista === true && valorCompra < 1000 && valorCompra > 500) {
         desconto = 15
-    } if (primeiraCompra === true && aVista === true && valorCompra < 500) {
+    } 
+    if (primeiraCompra === true && aVista === true && valorCompra < 500) {
         desconto = 20
-    } if (primeiraCompra === true && aVista === false  && valorCompra > 1000) {
+    } 
+    if (primeiraCompra === true && aVista === false  && valorCompra > 1000) {
         desconto = 20
-    } if (primeiraCompra === true && aVista === false &&  valorCompra < 1000 || valorCompra > 500) {
+    } 
+    if (primeiraCompra === true && aVista === false &&  valorCompra < 1000 && valorCompra > 500) {
         desconto = 15
-    } if (primeiraCompra === true && aVista === false && valorCompra < 500) {
+    }
+
+    if (primeiraCompra === false && aVista === true && valorCompra < 500) {
         desconto = 10
-    } if (primeiraCompra === false && aVista === true && valorCompra > 1000 ) {
-        desconto = 20
-    } if (primeiraCompra === false && aVista === true && valorCompra < 500) {
+    } 
+
+    if (primeiraCompra === false && aVista === false && valorCompra > 1000) {
         desconto = 10
-    } if (primeiraCompra === false && aVista === false && valorCompra > 1000) {
-        desconto = 10
-    } if (primeiraCompra === false && aVista === false && valorCompra < 1000 || valorCompra > 500) {
+    } 
+
+    if (primeiraCompra === false && aVista === false && valorCompra < 1000 || valorCompra > 500) {
         desconto = 5
-    } if (primeiraCompra === false && aVista === false && valorCompra < 500) {
+    } 
+    if (primeiraCompra === false && aVista === false && valorCompra < 500) {
         desconto = 0
     }
     return desconto
 }
 
-descontoCliente = geraDesconto(valorTotalCompra, primeiraCompraCliente, compraVista)
+descontoCliente = geraDesconto(primeiraCompraCliente, compraVista, valorTotalCompra )
 
 console.log(descontoCliente)
