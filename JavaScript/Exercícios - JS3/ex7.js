@@ -21,40 +21,85 @@ const population = [ {
 {
     nome: "Pedro",
     qtdFilhos: 5,
-    salario: 1500,
+    salario: 5000,
 }, 
 {
     nome: "Maria",
     qtdFilhos: 2,
-    salario: 1200,
+    salario: 90,
 },
 {
     nome: "Julia",
     qtdFilhos: 1,
-    salario: 2520,
+    salario: -2520,
 }]
 
 function mediaSalarialPopulacao() {
     let somaSalario = 0
     for (let i = 0; i < population.length; i++) {
-        somaSalario += population[i].salario
+        somaSalario += population[i]?.salario
     }
-    mediaSalarial = somaSalario / population.length
+    const mediaSalarial = somaSalario / population.length
+    return mediaSalarial
 }
-mediaSalarialPopulacao();
+
+mediaSalarial = mediaSalarialPopulacao()
 
 function mediaFilhosPopulacao() {
     let somaFilhos = 0
     for (let i = 0; i < population.length; i++) {
-        somaFilhos += population[i].qtdFilhos
+        somaFilhos += population[i]?.qtdFilhos
     }
-    mediaFilhos = somaFilhos / population.length 
-    // console.log(`Quantidade de filhos por pessoa ${mediaFilhos}`)
+    const mediaFilhos = somaFilhos / population.length 
+    return mediaFilhos
 }
 
-mediaFilhosPopulacao()
+mediaFilhos = mediaFilhosPopulacao()
 
-function maiorSalario() {
+function maiorSalarioPopulacao() {
+    if (population.length === 0) {
+        return undefined
+    }
+
+    let maiorSalario = population[0]?.salario
+
+    for (let i = 0; i < population.length; i++) {
+        
+        if (population[i].salario > maiorSalario) {
+            maiorSalario = population[i]?.salario 
+        }
+        
+    }
+    return maiorSalario
 }
 
-maiorSalario()
+maiorSalario = maiorSalarioPopulacao()
+
+function pessoasSalarioMaiorCem() {
+    let pessoaSalarioMaior = 0
+
+    if (population.length === 0) {
+        return undefined
+    }
+
+    for (let i = 0; i < population.length; i++) {
+        if( population[i].salario < 100) {
+            pessoaSalarioMaior++
+        }
+    }
+
+    const porcentagemPessoas = (pessoaSalarioMaior / population.length ) * 100
+
+    return porcentagemPessoas
+}
+
+porcentagemPessoas = pessoasSalarioMaiorCem()
+
+console.log
+    (`
+        SENSO DA POPULAÇÃO
+    média do salárial da população: R$${mediaSalarial}
+    Média de filhos percapita: ${mediaFilhos}
+    Maior salário: R$${maiorSalario}
+    Pessoas com salário até R$100,00: ${porcentagemPessoas}%
+    `)
