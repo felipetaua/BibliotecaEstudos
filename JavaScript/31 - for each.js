@@ -2,6 +2,8 @@
     For each
 
     é uma função e serve para percorrer array
+
+    O forEach é um método de array muito útil em JavaScript, projetado especificamente para executar uma função para cada elemento presente em um array. Ele simplifica a iteração sobre arrays, tornando o código mais legível e conciso em comparação com loops for tradicionais em muitos casos.
 */
 
 const students = [ 
@@ -16,8 +18,8 @@ const students = [
 
 let allStudentsAge = 0
 
-students.forEach( (students, index) => {
-    allStudentsAge += students.age
+students.forEach( (student, index) => {
+    allStudentsAge += student.age
 })
 
 const averageAge = allStudentsAge / students.length

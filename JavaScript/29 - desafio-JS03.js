@@ -28,7 +28,7 @@ Siga a formula desse vídeo para te auxiliar com o cálculo.
 Cálculo taxa = juros(Valor atual do investimento - Valor inicial investido) / Valor inicial investido * tempo
 https://www.youtube.com/watch?v=lhJJX69I8ak
 
-[] Escreva um programa onde, voce cria uma funcao geradora de desconto.
+[x] Escreva um programa onde, voce cria uma funcao geradora de desconto.
 - A função aceita 4 parametros (Nome do cliente, valor total da compra, um booleano que diz se é a primeira compra do cliente ou não, um booleano que diz se o cliente vai pagar a vista ou não)
 
 - Os descontos funcionam da seguinte forma:
