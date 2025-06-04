@@ -21,46 +21,79 @@
 */
 
 nomeCliente = "Rochele"
-valorTotalCompra = 5000
-primeiraCompraCliente = true
+valorTotalCompra = 100
+primeiraCompraCliente = false
 compraVista = false
 
 
-function geraDesconto(primeiraCompra, aVista, valorCompra) {
-    let desconto = 0
-    if (primeiraCompra === true && aVista === true && valorCompra > 1000) {
-        returndesconto = 30
+function geraDesconto(nome, valorCompra, primeiraCompra, aVista) {
+    let desconto = 0;
+
+    if (primeiraCompra && aVista) {
+        if (valorCompra > 1000) {
+            desconto = 30;
+        } else if (valorCompra > 500) {
+            desconto = 25;
+        } else {
+            desconto = 20;
+        }
     } 
-    if (primeiraCompra === true && aVista === true && valorCompra < 1000 && valorCompra > 500) {
-        desconto = 15
+    else if (primeiraCompra && !aVista) {
+        if (valorCompra > 1000) {
+            desconto = 20;
+        } else if (valorCompra > 500) {
+            desconto = 15;
+        } else {
+            desconto = 10;
+        }
     } 
-    if (primeiraCompra === true && aVista === true && valorCompra < 500) {
-        desconto = 20
+    else if (!primeiraCompra && aVista) {
+        if (valorCompra > 1000) {
+            desconto = 20;
+        } else if (valorCompra > 500) {
+            desconto = 15;
+        } else {
+            desconto = 10;
+        }
     } 
-    if (primeiraCompra === true && aVista === false  && valorCompra > 1000) {
-        desconto = 20
-    } 
-    if (primeiraCompra === true && aVista === false &&  valorCompra < 1000 && valorCompra > 500) {
-        desconto = 15
+    else if (!primeiraCompra && !aVista) {
+        if (valorCompra > 1000) {
+            desconto = 10;
+        } else if (valorCompra > 500) {
+            desconto = 5;
+        } else {
+            desconto = 0;
+        }
     }
 
-    if (primeiraCompra === false && aVista === true && valorCompra < 500) {
-        desconto = 10
-    } 
+    // Se tem desconto
+    if (desconto > 0) {
+        const valorDesconto = valorCompra * (desconto / 100);
+        const valorFinal = valorCompra - valorDesconto;
 
-    if (primeiraCompra === false && aVista === false && valorCompra > 1000) {
-        desconto = 10
+        console.log(`
+        -----------------------------------------------
+        Obrigado pela sua compra, ${nome}!
+        Valor total da compra: R$ ${valorCompra.toFixed(2)}
+        Desconto aplicado: ${desconto}%
+        Valor com desconto: R$ ${valorFinal.toFixed(2)}
+        -----------------------------------------------
+        `);
     } 
-
-    if (primeiraCompra === false && aVista === false && valorCompra < 1000 || valorCompra > 500) {
-        desconto = 5
-    } 
-    if (primeiraCompra === false && aVista === false && valorCompra < 500) {
-        desconto = 0
+    
+    // Se não tem desconto, gera cupom para próxima compra
+    else {
+        const cupom = Math.floor(Math.random() * (20 - 10 + 1)) + 10; // Gera entre 10 e 20
+        console.log(`
+        -----------------------------------------------
+        Obrigado pela sua compra, ${nome}!
+        Valor total da compra: R$ ${valorCompra.toFixed(2)}
+        Infelizmente, você não recebeu desconto desta vez.
+        Aqui vai um cupom de ${cupom}% de desconto para sua próxima compra!
+        -----------------------------------------------
+        `);
     }
-    return desconto
 }
 
-descontoCliente = geraDesconto(primeiraCompraCliente, compraVista, valorTotalCompra )
 
-console.log(descontoCliente)
+geraDesconto(nomeCliente, valorTotalCompra, primeiraCompraCliente, compraVista )

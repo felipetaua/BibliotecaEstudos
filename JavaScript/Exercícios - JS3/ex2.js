@@ -10,6 +10,7 @@ function tabuada(number) {
         }
     } else {
         console.log("O numero precisa ser entre 1 e 10")
+        return
     }
 }
 
