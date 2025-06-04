@@ -8,7 +8,7 @@ e escrever a tabuada de 1 a 10 do valor lido.
 [x] Escreva um programa onde, você chame uma função mandando dois argumentos, 2 números, e a função responde qual número é maior
 [x] Escreva um programa onde, você chame uma função mandando 2 argumentos, e a função RETORNA o maior e você mostra-lo na tela, fora da função
 
-[ ] A prefeitura de uma cidade fez uma pesquisa entre seus habitantes, coletando dados sobre o salario e numero de filhos. A prefeitura dessa cidade:
+[x] A prefeitura de uma cidade fez uma pesquisa entre seus habitantes, coletando dados sobre o salario e numero de filhos. A prefeitura dessa cidade:
 - média do salário da população;
 - média do número de filhos;
 - maior salário;
@@ -16,7 +16,7 @@ e escrever a tabuada de 1 a 10 do valor lido.
 - O final da leitura de dados se dará com a entrada de um salário negativo.
 - Faça isso usando uma função!
 
-[ ] Faça um programa onde, você chame uma função que calcule a taxa mensal de juros de um investimento.
+[x] Faça um programa onde, você chame uma função que calcule a taxa mensal de juros de um investimento.
 - Você deve enviar como argumentos da função
 - Valor inicial investido
 - Valor atual do investimento
@@ -28,7 +28,7 @@ Siga a formula desse vídeo para te auxiliar com o cálculo.
 Cálculo taxa = juros(Valor atual do investimento - Valor inicial investido) / Valor inicial investido * tempo
 https://www.youtube.com/watch?v=lhJJX69I8ak
 
-J Escreva um programa onde, voce cria uma funcao geradora de desconto.
+[] Escreva um programa onde, voce cria uma funcao geradora de desconto.
 - A função aceita 4 parametros (Nome do cliente, valor total da compra, um booleano que diz se é a primeira compra do cliente ou não, um booleano que diz se o cliente vai pagar a vista ou não)
 
 - Os descontos funcionam da seguinte forma:
