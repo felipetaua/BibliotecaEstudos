@@ -20,9 +20,6 @@ const students = [
     { name: "Julio", age: 45 },
 ]
 
-// const newArray = numbers.map( (number) => {
-//     return number
-// })
 
 
 const newStudents = students.map( (student) => {
@@ -35,3 +32,26 @@ const newStudents = students.map( (student) => {
 
 console.log(students)
 console.log(newStudents)
+
+
+// formas de escrever da mesma forma de estrutura
+
+const newArray0 = numbers.map( function(number) {
+    return number * 2
+})
+
+const newArray1 = numbers.map( (number) => {
+    return number * 2
+})
+
+const newArray3 = numbers.map( number => number * 2)
+
+
+
+const double = number => number * 2
+const toReais = number => `R$${number.toFixed(2)}`
+
+// voce consegue aninhar vários maps e trabalhar em camadas(primeiro posso multiplicar e depois converter para reais)
+const newArray = numbers.map(double).map(toReais)
+
+console.log(newArray)
