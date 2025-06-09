@@ -1,272 +1,267 @@
-# BibliotecaEstudos
-Estou reunindo o conteúdo de programação desde a base, até para conceitos mais complexos meu objetivo é conseguir aprender e reforçar minha base para que consiga compreender assuntos mais complexos
+# 📚 Biblioteca de Estudos para Desenvolvimento Web
 
-## Resumo da pasta HTML
+Bem-vindo à sua central de estudos de desenvolvimento web! Este repositório foi criado para organizar e consolidar o conhecimento em programação, desde os conceitos fundamentais até os tópicos mais avançados. O objetivo é servir como um guia de referência rápida e um registro do seu progresso.
 
-A pasta **HTML** contém exemplos e exercícios sobre a estruturação de páginas web utilizando a linguagem HTML. Os principais tópicos abordados incluem:
+## 🎯 Objetivo
 
-- Estrutura básica de um documento HTML
-- Utilização de tags de texto
-- Listas ordenadas e não ordenadas
-- Inserção de imagens e links
-- Estruturação de tabelas
-- Formulários básicos
-- Comentários e boas práticas
+Reforçar a base de conhecimento em tecnologias web (HTML, CSS, JavaScript) e ferramentas essenciais (Git) para construir uma fundação sólida, permitindo a compreensão de assuntos mais complexos no futuro, como frameworks e desenvolvimento backend.
 
-### Exemplos de código
+## 🗂️ Estrutura do Repositório
 
-**Estrutura básica:**
+- **/HTML**: Contém a estrutura e os elementos fundamentais da web.
+- **/CSS**: Abrange a estilização e o design visual das páginas.
+- **/JavaScript**: Focado na lógica, interatividade e dinamismo.
+- **/Git**: Guia de comandos para versionamento de código.
+
+---
+
+## 🏛️ HTML (HyperText Markup Language)
+
+A pasta **HTML** contém exemplos e exercícios sobre a estruturação de páginas web. É o esqueleto de qualquer site.
+
+### Tópicos Principais
+
+-   **Estrutura Básica**: A base de todo documento HTML (`<!DOCTYPE>`, `<html>`, `<head>`, `<body>`).
+-   **Tags de Texto**: Hierarquia de títulos (`<h1>` a `<h6>`), parágrafos (`<p>`), negrito (`<strong>`), itálico (`<em>`).
+-   **Listas**: Ordenadas (`<ol>`) e não ordenadas (`<ul>`).
+-   **Mídia e Links**: Inserção de imagens (`<img>`) e criação de hyperlinks (`<a>`).
+-   **Tabelas**: Estruturação de dados tabulares com `<table>`, `<tr>`, `<th>`, e `<td>`.
+-   **Formulários**: Elementos de entrada de dados como `<form>`, `<input>`, `<textarea>`, `<button>`.
+-   **HTML Semântico**: Uso de tags que descrevem seu significado, como `<header>`, `<main>`, `<footer>`, `<section>`, `<article>`, e `<nav>`, melhorando a acessibilidade e o SEO.
+-   **Comentários**: Boas práticas para documentar o código (``).
+
+### Exemplos de Código
+
+**Estrutura Semântica:**
 ```html
 <!DOCTYPE html>
-<html>
+<html lang="pt-BR">
   <head>
-    <title>Minha Página</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha Página Semântica</title>
   </head>
   <body>
-    <h1>Olá, mundo!</h1>
+    <header>
+      <h1>Logo da Empresa</h1>
+      <nav>
+        <ul>
+          <li><a href="#inicio">Início</a></li>
+          <li><a href="#sobre">Sobre</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section id="sobre">
+        <h2>Sobre Nós</h2>
+        <p>Esta é uma seção sobre a nossa história.</p>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Minha Empresa. Todos os direitos reservados.</p>
+    </footer>
   </body>
 </html>
 ```
 
-**Listas:**
+**Formulário Completo:**
 ```html
-<ol>
-  <li>Primeiro item</li>
-  <li>Segundo item</li>
-</ol>
-<ul>
-  <li>Item A</li>
-  <li>Item B</li>
-</ul>
-```
-
-**Imagens e Links:**
-```html
-<img src="imagem.jpg" alt="Descrição da imagem">
-<a href="https://www.exemplo.com">Visite o site</a>
-```
-
-**Tabelas:**
-```html
-<table>
-  <tr>
-    <th>Nome</th>
-    <th>Idade</th>
-  </tr>
-  <tr>
-    <td>Ana</td>
-    <td>25</td>
-  </tr>
-</table>
-```
-
-**Formulários:**
-```html
-<form>
+<form action="/enviar-dados" method="post">
   <label for="nome">Nome:</label>
-  <input type="text" id="nome" name="nome">
+  <input type="text" id="nome" name="nome_usuario" required>
+
+  <label for="email">Email:</label>
+  <input type="email" id="email" name="email_usuario" required>
+
   <button type="submit">Enviar</button>
 </form>
 ```
 
-## Resumo da pasta CSS
+---
 
-A pasta **CSS** reúne exemplos e exercícios sobre a estilização de páginas web utilizando a linguagem CSS. Os principais temas estudados incluem:
+## 🎨 CSS (Cascading Style Sheets)
 
-- **Seletores básicos e combinadores:**  
-  Seletores de tag, classe, id, descendente, filho, irmão adjacente e geral.
-- **Propriedades de cor e fundo:**  
-  `color`, `background-color`, `background-image`, `background-repeat`, `background-size`.
-- **Fontes e texto:**  
-  `font-family`, `font-size`, `font-weight`, `font-style`, `text-align`, `text-decoration`, `line-height`, `letter-spacing`.
-- **Box Model:**  
-  `width`, `height`, `padding`, `margin`, `border`, `box-sizing`.
-- **Display e posicionamento:**  
-  `display` (`block`, `inline`, `inline-block`, `none`), `position` (`static`, `relative`, `absolute`, `fixed`, `sticky`), `top`, `right`, `bottom`, `left`, `z-index`.
-- **Flexbox:**  
-  `display: flex`, `flex-direction`, `justify-content`, `align-items`, `flex-wrap`, `gap`.
-- **Grid Layout:**  
-  `display: grid`, `grid-template-columns`, `grid-template-rows`, `gap`, `grid-area`.
-- **Pseudo-classes e pseudo-elementos:**  
-  `:hover`, `:active`, `:focus`, `:nth-child()`, `::before`, `::after`.
-- **Transições e animações:**  
-  `transition`, `transition-duration`, `animation`, `@keyframes`.
-- **Responsividade:**  
-  Media queries (`@media`), unidades relativas (`em`, `rem`, `%`, `vw`, `vh`), layout fluido.
-- **Importação e organização:**  
-  `@import`, comentários, organização de arquivos CSS externos.
+A pasta **CSS** reúne exemplos sobre a estilização de páginas web. É responsável pela aparência e pelo design.
 
-### Exemplos de código
+### Tópicos Principais
 
-**Seletores e cor de fundo:**
+-   **Seletores e Combinadores**: Selecione elementos por tag, classe (`.`), ID (`#`), atributos e pseudo-classes (`:hover`).
+-   **Cores e Fundos**: `color`, `background-color`, `background-image`, etc.
+-   **Fontes e Textos**: `font-family`, `font-size`, `font-weight`, `text-align`.
+-   **Box Model**: O conceito fundamental de caixas em CSS, incluindo `margin`, `border`, `padding`, e `width`/`height`. A propriedade `box-sizing: border-box;` é essencial.
+-   **Display e Posicionamento**: Controle do fluxo da página com `display` (`block`, `inline`, `flex`, `grid`) e `position` (`static`, `relative`, `absolute`, `fixed`).
+-   **Flexbox**: Alinhamento e distribuição de itens em um contêiner unidimensional.
+-   **Grid Layout**: Criação de layouts complexos em duas dimensões (linhas e colunas).
+-   **Responsividade**: Adaptação do layout para diferentes tamanhos de tela usando Media Queries (`@media`) e unidades relativas (`%`, `vw`, `rem`).
+
+### Exemplos de Código
+
+**Box Model e `box-sizing`:**
 ```css
-body {
-  background-color: #f0f0f0;
-}
-h1 {
-  color: #333;
-}
-.titulo-destaque {
-  color: blue;
-  background: yellow;
-}
 .caixa {
-  width: 200px;
-  height: 100px;
-  padding: 20px;
-  margin: 10px;
-  border: 2px solid #000;
+  width: 300px;
+  padding: 20px; /* 20px de preenchimento interno */
+  border: 2px solid black; /* 2px de borda */
+  margin: 15px; /* 15px de espaçamento externo */
+
+  /* Com isso, o padding e a borda não aumentam a largura total da caixa */
   box-sizing: border-box;
-}
-.container {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  gap: 16px;
-}
-.grid-exemplo {
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  gap: 10px;
-}
-ton:hover {
-@media (max-width: 600px) {  background-color: #4caf50;
-
-
-
-
-
-
-```}  }    flex-direction: column;  .container {  color: white;
-  transition: background 0.3s;
 }
 ```
 
-## Resumo de comandos Git
+**Layout com Flexbox:**
+```css
+.container-flex {
+  display: flex;
+  flex-direction: row; /* Itens em linha */
+  justify-content: space-around; /* Espaçamento distribuído */
+  align-items: center; /* Alinhamento vertical */
+  gap: 10px; /* Espaçamento entre os itens */
+}
+```
 
-Abaixo estão os principais comandos e exemplos de uso do **Git**, essenciais para versionamento de código e colaboração em projetos:
+**Layout com Grid:**
+```css
+.container-grid {
+  display: grid;
+  /* Cria 3 colunas de fração igual */
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 16px; /* Espaçamento entre as células */
+}
+```
 
-### Configuração inicial
+**Media Query para Responsividade:**
+```css
+/* Para telas com largura máxima de 600px */
+@media (max-width: 600px) {
+  .container-flex {
+    flex-direction: column; /* Altera a direção para coluna */
+  }
+}
+```
 
+---
+
+## 📜 JavaScript
+
+A pasta **JavaScript** contém a lógica e a interatividade do seu site, desde a manipulação de elementos da página até a comunicação com servidores.
+
+### Tópicos Principais
+
+-   **Sintaxe Básica**: Variáveis (`let`, `const`), tipos de dados (String, Number, Boolean, Object, Array), e operadores (`+`, `-`, `*`, `/`, `===`, `&&`, `||`).
+-   **Estruturas de Controle**: Condicionais (`if`/`else`, `switch`) e laços de repetição (`for`, `while`).
+-   **Funções**: Blocos de código reutilizáveis (`function`, arrow functions `=>`).
+-   **Arrays e Objetos**: Manipulação de listas de dados e estruturas complexas. Métodos como `.map()`, `.filter()`, e `.reduce()` são essenciais.
+-   **Manipulação do DOM (Document Object Model)**: Acessar e modificar o HTML e o CSS da página. `document.getElementById()`, `document.querySelector()`, `element.textContent`, `element.style`.
+-   **Eventos**: Responder a ações do usuário, como cliques (`click`), pressionamento de teclas (`keydown`) e envio de formulários (`submit`). `element.addEventListener()`.
+-   **Assincronismo**: Lidar com operações que levam tempo, como requisições a APIs, usando `Promises` e `async/await`.
+
+### Exemplos de Código
+
+**Manipulação do DOM e Eventos:**
+```html
+<h1 id="titulo">Olá, Mundo!</h1>
+<button id="meuBotao">Mudar Texto</button>
+```
+```javascript
+// no seu script.js
+const titulo = document.getElementById('titulo');
+const botao = document.getElementById('meuBotao');
+
+// Adiciona um "ouvinte" de evento de clique no botão
+botao.addEventListener('click', () => {
+  titulo.textContent = 'O texto foi alterado!';
+  titulo.style.color = 'blue';
+});
+```
+
+**Manipulação de Arrays com `.map()`:**
+```javascript
+const numeros = [1, 2, 3, 4, 5];
+
+// .map() cria um novo array com o resultado da função
+const numerosDobrados = numeros.map(num => num * 2);
+
+console.log(numerosDobrados); // Saída: [2, 4, 6, 8, 10]
+```
+
+**Requisição Assíncrona com `async/await`:**
+```javascript
+// Função que busca dados de uma API de exemplo
+async function buscarDados() {
+  try {
+    const response = await fetch('[https://api.github.com/users/google](https://api.github.com/users/google)');
+    const data = await response.json();
+    console.log(`Nome da organização: ${data.name}`);
+  } catch (error) {
+    console.error('Falha ao buscar dados:', error);
+  }
+}
+
+buscarDados();
+```
+
+---
+
+## 🌿 Git e GitHub
+
+Comandos essenciais para o versionamento de código e colaboração.
+
+### Configuração Inicial
 ```bash
 git config --global user.name "Seu Nome"
 git config --global user.email "seu@email.com"
 ```
 
-### Comandos básicos
-
+### Fluxo de Trabalho Básico
 ```bash
-git init                # Inicializa um novo repositório Git
-git status              # Mostra o status dos arquivos no diretório
-git add arquivo.txt     # Adiciona um arquivo específico à área de stage
-git add .               # Adiciona todas as alterações à área de stage
-git commit -m "Mensagem do commit"   # Salva as alterações com uma mensagem
-git log                 # Exibe o histórico de commits
-git diff                # Mostra as diferenças entre arquivos modificados
-git remote add origin https://github.com/usuario/repositorio.git  # Adiciona um repositório remoto
-git push -u origin main      # Envia os commits para o repositório remoto (primeiro push)
-git push                     # Envia commits para o remoto
-git pull                     # Baixa e integra alterações do remoto
-git clone https://github.com/usuario/repositorio.git  # Clona um repositório remoto
-git branch                   # Lista as branches
-git branch nome-da-branch    # Cria uma nova branch
-git checkout nome-da-branch  # Troca para a branch especificada
-git checkout -b nova-branch  # Cria e já troca para a nova branch
-git merge nome-da-branch     # Mescla a branch especificada na branch atual
-git branch -d nome-da-branch # Deleta uma branch
-git restore arquivo.txt      # Desfaz alterações não commitadas em um arquivo
-git reset --hard HEAD        # Desfaz todas as alterações não commitadas
-git revert <hash_do_commit>  # Cria um novo commit revertendo um commit anterior
-git stash                    # Salva temporariamente alterações não commitadas
-git stash pop                # Recupera as alterações salvas com stash
-git show                     # Mostra detalhes de um commit específico
-git tag v1.0                 # Cria uma tag chamada v1.0
+# Inicia um repositório local
+git init
+
+# Adiciona todos os arquivos modificados para a área de "stage"
+git add .
+
+# Salva as alterações com uma mensagem descritiva
+git commit -m "feat: Adiciona estrutura inicial do projeto"
+
+# Envia os commits para o repositório remoto (ex: GitHub)
+git push origin main
+
+# Puxa as atualizações do repositório remoto
+git pull
 ```
 
-## Resumo da pasta JavaScript
+### Trabalhando com Branches
+```bash
+# Cria uma nova branch e já muda para ela
+git checkout -b minha-nova-feature
 
-A pasta **JavaScript** reúne exemplos e exercícios práticos para o aprendizado da linguagem JavaScript, abordando desde conceitos básicos até tópicos mais avançados. Os principais temas estudados incluem:
+# Após commitar as alterações na branch, volte para a principal
+git checkout main
 
-- **Sintaxe básica:**  
-  Declaração de variáveis (`var`, `let`, `const`), tipos de dados (number, string, boolean, array, object), operadores aritméticos e lógicos.
-- **Estruturas de controle:**  
-  Condicionais (`if`, `else`, `switch`), laços de repetição (`for`, `while`, `do...while`).
-- **Funções:**  
-  Declaração de funções, funções anônimas, arrow functions, parâmetros e retorno.
-- **Arrays e objetos:**  
-  Métodos de array (`push`, `pop`, `shift`, `unshift`, `map`, `filter`, `reduce`), manipulação de objetos, acesso e modificação de propriedades.
-- **Manipulação de strings e números:**  
-  Métodos de string (`length`, `toUpperCase`, `toLowerCase`, `split`, `replace`), métodos de número (`Math.round`, `Math.floor`, `Math.random`).
-- **Interação com o usuário:**  
-  Uso de `prompt`, `alert` e `console.log` para entrada e saída de dados (em ambiente de navegador).
-- **Funções matemáticas:**  
-  Uso do objeto `Math` para operações como sorteio de números aleatórios, encontrar maior/menor valor, arredondamentos, etc.
-- **Trabalhando com datas:**  
-  Uso do objeto `Date` para manipulação de datas e horários.
-- **Exercícios práticos:**  
-  Pequenos desafios para fixação, como gerador de número aleatório, verificação de maior/menor valor, soma de valores, validação de entrada, entre outros.
+# Mescla as alterações da sua feature na branch principal
+git merge minha-nova-feature
 
-### Exemplos de código
-
-**Declaração de variáveis e operadores:**
-```javascript
-let nome = "Ana";
-const idade = 25;
-let soma = 10 + 5;
+# Deleta a branch após a mesclagem
+git branch -d minha-nova-feature
 ```
 
-**Estruturas de controle:****Estruturas condicionais:**
-```javascript```javascript
-for (let i = 0; i < 5; i++) {if (idade >= 18) {
-  console.log(i);  console.log("Maior de idade");
-}} else {
-```  console.log("Menor de idade");
-}
-**Estruturas condicionais:**
-```javascript
-if (idade >= 18) {
-  console.log("Maior de idade");
-} else {
-  console.log("Menor de idade");
-}
-```
+### Comandos Úteis
+```bash
+# Verifica o status atual dos arquivos
+git status
 
+# Exibe o histórico de commits
+git log --oneline
 
+# Reverte as alterações de um arquivo para a versão do último commit
+git restore <nome-do-arquivo>
 
+# Salva alterações não commitadas temporariamente
+git stash
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-```console.log(numeroAleatorio);const numeroAleatorio = Math.floor(Math.random() * 100) + 1;```javascript**Exercício - Gerador de número aleatório:**```let mensagem = saudacao("Ana");}  return "Olá, " + nome + "!";function saudacao(nome) {```javascript**Funções:**```let chaves = Object.keys(pessoa);  // Retorna as chaves do objetopessoa.idade = 26;  // Atualiza a idade};  idade: 25  nome: "Ana",let pessoa = {```javascript**Manipulação de objetos:**```let primeiraFruta = frutas.shift();  // Remove e retorna a primeira frutafrutas.push("uva");  // Adiciona "uva" ao final do arraylet frutas = ["maçã", "banana", "laranja"];```javascript**Manipulação de arrays:**
-```console.log(dobrarNumeros([1, 2, 3])); // [2, 4, 6]}  return arr.map(num => num * 2);function dobrarNumeros(arr) {```javascript**Funções:**if (idade >= 18) {
-  console.log("Maior de idade");
-} else {
-  console.log("Menor de idade");
-}
+# Aplica as últimas alterações salvas com o stash
+git stash pop
 ```
