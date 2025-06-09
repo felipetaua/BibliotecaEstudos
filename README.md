@@ -110,4 +110,35 @@ h1 {
   color: blue;
   background: yellow;
 }
+.caixa {
+  width: 200px;
+  height: 100px;
+  padding: 20px;
+  margin: 10px;
+  border: 2px solid #000;
+  box-sizing: border-box;
+}
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+}
+.grid-exemplo {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 10px;
+}
+ton:hover {
+@media (max-width: 600px) {  background-color: #4caf50;
+
+
+
+
+
+
+```}  }    flex-direction: column;  .container {  color: white;
+  transition: background 0.3s;
+}
 ```
