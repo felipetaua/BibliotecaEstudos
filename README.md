@@ -183,3 +183,35 @@ git stash pop                # Recupera as alterações salvas com stash
 git show                     # Mostra detalhes de um commit específico
 git tag v1.0                 # Cria uma tag chamada v1.0
 ```
+
+## Resumo da pasta JavaScript
+
+A pasta **JavaScript** reúne exemplos e exercícios práticos para o aprendizado da linguagem JavaScript, abordando desde conceitos básicos até tópicos mais avançados. Os principais temas estudados incluem:
+
+- **Sintaxe básica:**  
+  Declaração de variáveis (`var`, `let`, `const`), tipos de dados (number, string, boolean, array, object), operadores aritméticos e lógicos.
+- **Estruturas de controle:**  
+  Condicionais (`if`, `else`, `switch`), laços de repetição (`for`, `while`, `do...while`).
+- **Funções:**  
+  Declaração de funções, funções anônimas, arrow functions, parâmetros e retorno.
+- **Arrays e objetos:**  
+  Métodos de array (`push`, `pop`, `shift`, `unshift`, `map`, `filter`, `reduce`), manipulação de objetos, acesso e modificação de propriedades.
+- **Manipulação de strings e números:**  
+  Métodos de string (`length`, `toUpperCase`, `toLowerCase`, `split`, `replace`), métodos de número (`Math.round`, `Math.floor`, `Math.random`).
+- **Interação com o usuário:**  
+  Uso de `prompt`, `alert` e `console.log` para entrada e saída de dados (em ambiente de navegador).
+- **Funções matemáticas:**  
+  Uso do objeto `Math` para operações como sorteio de números aleatórios, encontrar maior/menor valor, arredondamentos, etc.
+- **Trabalhando com datas:**  
+  Uso do objeto `Date` para manipulação de datas e horários.
+- **Exercícios práticos:**  
+  Pequenos desafios para fixação, como gerador de número aleatório, verificação de maior/menor valor, soma de valores, validação de entrada, entre outros.
+
+### Exemplos de código
+
+**Declaração de variáveis e operadores:**
+```javascript
+let nome = "Ana";
+const idade = 25;
+let soma = 10 + 5;
+```
