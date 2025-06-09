@@ -142,3 +142,31 @@ ton:hover {
   transition: background 0.3s;
 }
 ```
+
+## Resumo de comandos Git
+
+Abaixo estão os principais comandos e exemplos de uso do **Git**, essenciais para versionamento de código e colaboração em projetos:
+
+### Configuração inicial
+
+```bash
+git config --global user.name "Seu Nome"
+git config --global user.email "seu@email.com"
+```
+
+### Comandos básicos
+
+```bash
+git init                # Inicializa um novo repositório Git
+git status              # Mostra o status dos arquivos no diretório
+git add arquivo.txt     # Adiciona um arquivo específico à área de stage
+git add .               # Adiciona todas as alterações à área de stage
+git commit -m "Mensagem do commit"   # Salva as alterações com uma mensagem
+git log                 # Exibe o histórico de commits
+git diff                # Mostra as diferenças entre arquivos modificados
+git remote add origin https://github.com/usuario/repositorio.git  # Adiciona um repositório remoto
+git push -u origin main      # Envia os commits para o repositório remoto (primeiro push)
+git push                     # Envia commits para o remoto
+git pull                     # Baixa e integra alterações do remoto
+git clone https://github.com/usuario/repositorio.git  # Clona um repositório remoto
+```
