@@ -169,4 +169,17 @@ git push -u origin main      # Envia os commits para o repositório remoto (prim
 git push                     # Envia commits para o remoto
 git pull                     # Baixa e integra alterações do remoto
 git clone https://github.com/usuario/repositorio.git  # Clona um repositório remoto
+git branch                   # Lista as branches
+git branch nome-da-branch    # Cria uma nova branch
+git checkout nome-da-branch  # Troca para a branch especificada
+git checkout -b nova-branch  # Cria e já troca para a nova branch
+git merge nome-da-branch     # Mescla a branch especificada na branch atual
+git branch -d nome-da-branch # Deleta uma branch
+git restore arquivo.txt      # Desfaz alterações não commitadas em um arquivo
+git reset --hard HEAD        # Desfaz todas as alterações não commitadas
+git revert <hash_do_commit>  # Cria um novo commit revertendo um commit anterior
+git stash                    # Salva temporariamente alterações não commitadas
+git stash pop                # Recupera as alterações salvas com stash
+git show                     # Mostra detalhes de um commit específico
+git tag v1.0                 # Cria uma tag chamada v1.0
 ```
