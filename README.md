@@ -215,3 +215,58 @@ let nome = "Ana";
 const idade = 25;
 let soma = 10 + 5;
 ```
+
+**Estruturas de controle:****Estruturas condicionais:**
+```javascript```javascript
+for (let i = 0; i < 5; i++) {if (idade >= 18) {
+  console.log(i);  console.log("Maior de idade");
+}} else {
+```  console.log("Menor de idade");
+}
+**Estruturas condicionais:**
+```javascript
+if (idade >= 18) {
+  console.log("Maior de idade");
+} else {
+  console.log("Menor de idade");
+}
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+```console.log(numeroAleatorio);const numeroAleatorio = Math.floor(Math.random() * 100) + 1;```javascript**Exercício - Gerador de número aleatório:**```let mensagem = saudacao("Ana");}  return "Olá, " + nome + "!";function saudacao(nome) {```javascript**Funções:**```let chaves = Object.keys(pessoa);  // Retorna as chaves do objetopessoa.idade = 26;  // Atualiza a idade};  idade: 25  nome: "Ana",let pessoa = {```javascript**Manipulação de objetos:**```let primeiraFruta = frutas.shift();  // Remove e retorna a primeira frutafrutas.push("uva");  // Adiciona "uva" ao final do arraylet frutas = ["maçã", "banana", "laranja"];```javascript**Manipulação de arrays:**
+```console.log(dobrarNumeros([1, 2, 3])); // [2, 4, 6]}  return arr.map(num => num * 2);function dobrarNumeros(arr) {```javascript**Funções:**if (idade >= 18) {
+  console.log("Maior de idade");
+} else {
+  console.log("Menor de idade");
+}
+```
