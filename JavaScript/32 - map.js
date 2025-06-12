@@ -47,7 +47,7 @@ const newArray1 = numbers.map( (number) => {
 const newArray3 = numbers.map( number => number * 2)
 
 
-
+// tratar a informação em camadas
 const double = number => number * 2
 const toReais = number => `R$${number.toFixed(2)}`
 
