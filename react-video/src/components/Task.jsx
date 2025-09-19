@@ -1,6 +1,14 @@
-function Tasks() {
+function Tasks(props) {
+    console.log(props)
     return (
-        <h1>Taks</h1>
+        <ul className="space-y-4 p-6 bg-slate-200 rounded-md shadow">
+            {props.tasks.map((task) => (
+                <li className="flex" key={task.id} >
+                <button className="bg-slate-400 text-white p-2 rounded-md">{task.title}</button>
+                <button>Ver Datalher</button>
+                </li>
+            ))}
+        </ul>
     )
 }
 
