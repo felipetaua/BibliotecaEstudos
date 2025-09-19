@@ -25,6 +25,24 @@ function App() {
       isCompleted: false,
     }
     ])
+  
+  function onTaskClick(taskId) {
+    const newTask = tasks.map(task => {
+      // PRECISO ATUALIZAR ESSA TAREFA
+      if (task.id === taskId) {
+        return {...task, isCompleted: !task.isCompleted}
+      }
+
+      return task;
+    })
+    // NÃO PRECISA ATUALIZAR ESSA TAREFA
+    setTask(newTask);
+  }
+
+  function onDeleteTaskClick(taskId) {
+    const newTasks = tasks.filter(task => task.id  !== taskId);
+    setTask(newTasks);
+  }
 
   return (
     <div className="w-screen h-screen bg-slate-500 flex justify-center p-6">
@@ -33,7 +51,7 @@ function App() {
             Gerenciador de tarefas
           </h1>
           <AddTask />
-          <Tasks tasks={tasks}/>
+          <Tasks tasks={tasks} onTaskClick={onTaskClick} onDeleteTaskClick={onDeleteTaskClick} />
       </div>
     </div>
   );
