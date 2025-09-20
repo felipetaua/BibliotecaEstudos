@@ -1,32 +1,37 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Tasks from "./components/Task";
 import AddTask from "./components/AddTask";
+import Title from "./components/Title";
 import {v4} from 'uuid';
 
 function App() {
 
   // states (estado)
-  const [tasks, setTask] = useState([
-    {
-    id: 1,
-    title: "Estudar Matemática",
-    description: "Estudar matemática básica para se tornar um desenvolvedor full-stack",
-    isCompleted: false,
-  
-    },
-    {
-      id: 2,
-      title: "Estudar Programação",
-      description: "Aprimorar conceitos de programação para se tornar um desenvolvedor full-stack",
-      isCompleted: false,
-    },
-    {
-      id: 3,
-      title: "Leitura Diaria",
-      description: "Leitura de livros de programação para se tornar um desenvolvedor full-stack",
-      isCompleted: false,
-    }
-    ])
+  const [tasks, setTasks] = useState(
+    JSON.parse(localStorage.getItem("tasks")) || [] 
+  );
+
+  useEffect(() => {
+    localStorage.setItem("tasks", JSON.stringify(tasks))
+  }, [tasks])
+
+  useEffect( () => {
+    // const fetchTasks = async () => {
+      // chamar a api
+    // const response = await fetch('https://jsonplaceholder.typicode.com/todos?_limit=10',
+    //   {
+    //   method: 'GET'
+    //   }
+    // );
+    
+    // pegar os dados da api que ela retorna
+    // const data = await response.json()
+
+    // armazenar/persistir esses dados no state
+    // setTasks(data);
+    // }
+  // fetchTasks();
+  },[])
   
   function onTaskClick(taskId) {
     const newTask = tasks.map(task => {
@@ -38,12 +43,12 @@ function App() {
       return task;
     })
     // NÃO PRECISA ATUALIZAR ESSA TAREFA
-    setTask(newTask);
+    setTasks(newTask);
   }
 
   function onDeleteTaskClick(taskId) {
     const newTask = tasks.filter(task => task.id  !== taskId);
-    setTask(newTask);
+    setTasks(newTask);
   }
 
   function onAddTaskSubmit (title, description) {
@@ -54,15 +59,15 @@ function App() {
       isCompleted: false,
       
     }
-    setTask([...tasks, newTask])
+    setTasks([...tasks, newTask])
   }
 
   return (
     <div className="w-screen h-screen bg-slate-500 flex justify-center p-6">
       <div className="w-[500px] space-y-4">
-          <h1 className="text-3xl text-slate-100 font-bold text-center">
+          <Title>
             Gerenciador de tarefas
-          </h1>
+          </Title>
           <AddTask onAddTaskSubmit={onAddTaskSubmit} />
           <Tasks tasks={tasks} onTaskClick={onTaskClick} onDeleteTaskClick={onDeleteTaskClick} />
       </div>
