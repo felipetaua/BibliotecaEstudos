@@ -6,13 +6,31 @@ import {v4} from 'uuid';
 function App() {
 
   // states (estado)
-  const [tasks, setTask] = useState(
+  const [tasks, setTasks] = useState(
     JSON.parse(localStorage.getItem("tasks")) || [] 
   );
 
   useEffect(() => {
     localStorage.setItem("tasks", JSON.stringify(tasks))
   }, [tasks])
+
+  useEffect( () => {
+    // const fetchTasks = async () => {
+      // chamar a api
+    // const response = await fetch('https://jsonplaceholder.typicode.com/todos?_limit=10',
+    //   {
+    //   method: 'GET'
+    //   }
+    // );
+    
+    // pegar os dados da api que ela retorna
+    // const data = await response.json()
+
+    // armazenar/persistir esses dados no state
+    // setTasks(data);
+    // }
+  // fetchTasks();
+  },[])
   
   function onTaskClick(taskId) {
     const newTask = tasks.map(task => {
@@ -24,12 +42,12 @@ function App() {
       return task;
     })
     // NÃO PRECISA ATUALIZAR ESSA TAREFA
-    setTask(newTask);
+    setTasks(newTask);
   }
 
   function onDeleteTaskClick(taskId) {
     const newTask = tasks.filter(task => task.id  !== taskId);
-    setTask(newTask);
+    setTasks(newTask);
   }
 
   function onAddTaskSubmit (title, description) {
@@ -40,7 +58,7 @@ function App() {
       isCompleted: false,
       
     }
-    setTask([...tasks, newTask])
+    setTasks([...tasks, newTask])
   }
 
   return (
